@@ -1,0 +1,8 @@
+INSERT INTO `spring`.`roles` (`role_id`, `name`) VALUES ('1', 'ADMIN');
+INSERT INTO `spring`.`roles` (`role_id`, `name`) VALUES ('2', 'USER');
+
+INSERT INTO `spring`.`users` (`user_id`, `password`, `username`) VALUES ('1', '$2a$12$a4RLLjMGgOazqv6mBkXUxumQMTp9t.OzUNaB5.uABV6huxbzntiWu', 'abc123');
+INSERT INTO `spring`.`users` (`user_id`, `password`, `username`) VALUES ('2', '$2a$12$VLOH8dc05Onvd5PKaRR03ebLO6ngc.ESLuhpRYBwyWDINUe3u5hM2', '123abc');
+
+INSERT INTO `spring`.`user_roles` (`user_id`, `role_id`) VALUES (1,1);
+INSERT INTO `spring`.`user_roles` (`user_id`, `role_id`) VALUES (2,2);
